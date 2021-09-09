@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'settings';
+@import 'vendor/reset';
+@import './mixins/breakpoint';
+@import './components/product';
+
+@import './components/header';
+@import './components/presentation';
+@import 'components/deal';
+@import './components/suggestion';
+@import './components/footer';
+@import './components/introduction';
+@import 'components/main_cart';
+@import 'components/main_catalog';
+@import './components/filter';
+@import 'components/main_product';
+@import 'components/main_registration';
+@import 'components/reservation';

@@ -1,0 +1,36 @@
+.product-bottom {
+  padding-top: 49px;
+  text-align: center;
+  margin-bottom: 96px;
+
+  @include tablet {
+    padding-top: 40px;
+    margin-bottom: 64px;
+  }
+}
+
+.product-pagination {
+  padding: 12px 15px;
+  display: inline-block;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+
+  &__link {
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #c4c4c4;
+
+    &_color {
+      color: var(--color-black0);
+    }
+
+    &:hover {
+      color: var(--color-red);
+    }
+
+    &_active {
+      color: var(--color-red);
+    }
+  }
+}

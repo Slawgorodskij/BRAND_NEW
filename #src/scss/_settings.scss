@@ -1,0 +1,36 @@
+@import './mixins/breakpoint';
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  @include tablet {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.svg-icon {
+  fill: #e8e8e8;
+  transition: transform 0.3s linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
